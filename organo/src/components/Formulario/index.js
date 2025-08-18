@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
-const Formulario = () =>{
+const Formulario = (props) =>{
     const animes = [
         'Attack on Titan',
         'Dragon Ball',
@@ -22,6 +22,12 @@ const Formulario = () =>{
 
     const aoSalvar = (evento) =>{
         evento.preventDefault()
+        props.aoCadastrado({
+            nome,
+            cargo,
+            imagem,
+            anime
+        })
     }
 
     return(
