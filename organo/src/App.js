@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario aoCadastrado={personagem => aoNovoCadastro(personagem)} />
+      <Formulario animes={animes.map(anime => anime.nome)} aoCadastrado={personagem => aoNovoCadastro(personagem)} />
       {animes.map(anime => <Anime key={anime.nome} nome={anime.nome} corPrimaria={anime.corPrimaria} corSecundaria={anime.corSecundaria} />)}
     </div>
   )
