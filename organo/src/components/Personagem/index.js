@@ -1,14 +1,14 @@
 import './Personagem.css'
 
-const Personagem = (props) =>{
+const Personagem = ({nome, cargo, imagem}) =>{
     return(
         <div className='personagem'>
-            <div className='cabecalho' style={{backgroundColor: props.corPrimaria}}>
-                <img src={props.imagem} alt={props.nome} />
+            <div className='cabecalho'>
+                <img src={imagem} alt={nome} />
             </div>
-            <div className='rodape' style={{backgroundColor: props.corSecundaria}}>
-                <h4>{props.nome}</h4>
-                <h5>{props.anime}</h5>
+            <div className='rodape'>
+                <h4>{nome}</h4>
+                <h5>{cargo}</h5>
             </div>
         </div>
     )
