@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Banner from './components/Banner'
 import Formulario from './components/Formulario'
 import Anime from './components/Anime'
+import Rodape from './components/Rodape'
 
 function App() {
   const animes = [
@@ -25,6 +26,7 @@ function App() {
       <Banner />
       <Formulario animes={animes.map(anime => anime.nome)} aoCadastrado={personagem => aoNovoCadastro(personagem)} />
       {animes.map(anime => <Anime key={anime.nome} nome={anime.nome} corPrimaria={anime.corPrimaria} corSecundaria={anime.corSecundaria} personagens={personagens.filter(personagem => personagem.anime === anime.nome)} />)}
+      <Rodape />
     </div>
   )
 }
