@@ -5,6 +5,7 @@ const Anime = (props) =>{
     const css = {backgroundColor: props.corSecundaria}
 
     return(
+        props.personagens.length > 0 && 
         <section className="anime" style={css}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='personagens'>

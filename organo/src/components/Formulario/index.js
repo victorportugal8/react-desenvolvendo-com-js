@@ -18,6 +18,10 @@ const Formulario = (props) =>{
             imagem,
             anime
         })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setAnime('')
     }
 
     return(
