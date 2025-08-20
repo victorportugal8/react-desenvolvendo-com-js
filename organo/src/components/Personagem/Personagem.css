@@ -1,0 +1,26 @@
+.personagem{
+    width: 280px;
+}
+.personagem .cabecalho{
+    background-color: #F0F0F0;
+    border-radius: 5px;
+}
+.personagem img{
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+.personagem .rodape h4{
+    color: #6278F7;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.personagem .rodape h5{
+    color: #212121;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 16px;
+}

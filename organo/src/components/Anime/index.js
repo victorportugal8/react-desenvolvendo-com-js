@@ -1,3 +1,4 @@
+import Personagem from '../Personagem'
 import './Anime.css'
 
 const Anime = (props) =>{
@@ -6,6 +7,7 @@ const Anime = (props) =>{
     return(
         <section className="anime" style={css}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
+            <Personagem />
         </section>
     )
 }
