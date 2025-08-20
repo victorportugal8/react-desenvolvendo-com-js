@@ -9,7 +9,7 @@ const Anime = (props) =>{
         <section className="anime" style={css}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='personagens'>
-                {props.personagens.map(personagem => <Personagem nome={personagem.nome} cargo={personagem.cargo} imagem={personagem.imagem} />)}
+                {props.personagens.map(personagem => <Personagem corDeFundo={props.corPrimaria} key={personagem.nome} nome={personagem.nome} cargo={personagem.cargo} imagem={personagem.imagem} />)}
             </div>
         </section>
     )
