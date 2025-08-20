@@ -17,6 +17,7 @@
     border-radius: 0 0 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
+    display: block;
 }
 .personagem .rodape h4{
     color: #6278F7;
